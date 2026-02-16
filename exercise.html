@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Basics Exercise</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+      .main {
+        width: 100%;
+        min-height: 90vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 4rem;
+        padding: 0 1rem;
+      }
+
+      .counter-container,
+      .calculator-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+        max-width: 450px;
+        width: 100%;
+        text-align: center;
+        padding: 1.5rem;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+      }
+
+      .counter-text {
+        font-size: 2rem;
+        font-weight: 500;
+      }
+
+      .btn-container {
+        display: flex;
+        gap: 0.5rem;
+      }
+
+      button {
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: transform 0.3s ease-in-out;
+      }
+
+      button:hover {
+        transform: translateY(-4px);
+      }
+
+      input {
+        padding: 1rem;
+        font-size: 1rem;
+        width: 100%;
+        margin-bottom: 1rem;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+      }
+
+      input:focus {
+        outline: none;
+        box-shadow: 0 0 0 2px rgba(180, 180, 180, 0.25);
+      }
+    </style>
+  </head>
+
+  <body>
+    <main class="main">
+      <h1>JavaScript Exercise</h1>
+      <section class="counter-container">
+        <h2>Counter App</h2>
+        <p class="counter-text js-counter-text">0</p>
+        <div class="btn-container">
+          <button class="js-increment-btn">Increment +</button>
+          <button class="js-decrement-btn">Decrement -</button>
+        </div>
+      </section>
+
+      <section class="calculator-container">
+        <h2>Dog Age Calculator</h2>
+        <input
+          type="number"
+          class="js-age-input"
+          placeholder="Enter your age"
+        />
+        <button class="js-calculate-btn">Calculate</button>
+        <p class="js-result">Your dog age will appear here...</p>
+      </section>
+    </main>
+
+    <script src="exercise.js"></script>
+  </body>
+</html>

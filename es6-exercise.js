@@ -67,8 +67,6 @@ const prices = [10, 20, 30, 40];
 const colors = ['red', 'green', 'blue'];
 // TODO: Destructure to get first and second colors
 
-console.log(firstColor);
-
 // ============================================
 //* EXERCISE 7: Object Destructuring
 // ============================================
